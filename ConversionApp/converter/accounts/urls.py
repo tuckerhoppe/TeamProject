@@ -8,7 +8,7 @@ from . import views
 urlpatterns = [
     path('', account_view.login),
     path('register/', account_view.register, name='register'),
-    path('testme/', converter_view.testme),
+    path('testme/', converter_view.testme, name='testme'),
     path('home/', account_view.homePage, name='home'),
     path('converter/', converter_view.add, name='add'),
     path('login/', account_view.login),

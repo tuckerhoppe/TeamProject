@@ -4,7 +4,7 @@
 
 <div class="testMePage">
     <div style = "margin: auto; width: 100%; text-align: center;">
-        <form action="add">
+        <form action="{%url 'testme' %}">
         <select class="metric select" name="type1" method = 'post' style = "margin: 15px;">
             <option disabled='true' selected>-- Select Metric Measurement --</option>
             <option value = 'mm'>Millimeters</option>
@@ -60,6 +60,7 @@
             <input type="submit" style = "margin: 5px; ">
             </div> -->
         </form>
+        <p>The answer is: {{result}}</p>
     </div>
 
 
